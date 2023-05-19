@@ -1,0 +1,366 @@
+/* General CSS */
+
+* {
+  box-sizing:border-box;
+  
+}
+
+body {
+  background:#f5fff9;
+  margin:0;
+
+}
+
+.r_float {
+  float:right;
+}
+
+.l_left {
+  float:left;
+}
+
+
+img {
+  object-fit: cover;
+  width:100%;
+  height:100%;
+}
+
+.back_btn {
+  text-align:center;
+}
+
+
+/* Sections */
+
+ /* Header */
+
+header {
+  background-color:#15301b; /*update*/
+  color:#ffe6d5;
+  font-weight:bold;
+  font-size:1.4em;
+  text-indent:2em;
+  width:100%;
+  padding-top:2%;
+  padding-bottom:2%;
+  margin-bottom:4%;
+  top: 0;
+  
+}
+
+
+
+  /* Body */
+#main {
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:90%;
+  
+}
+
+#meals {
+  width: 60%;
+  margin:auto;
+}
+
+.subhead { 
+  background-color: #F4E6FF;
+  border-top: 2px solid #6A0091;
+  border-bottom: 2px solid #6A0091;
+  border-radius:12px;
+  padding:2%;
+  text-align:center;
+  font-size:2em;
+  }
+
+.grid { /* add grid class*/
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:2% 2%;
+  
+}  
+
+.block {
+  width: 100%; 
+  height:auto;
+  padding: 2%;
+  border: 2px solid black;
+  border-radius:2em;
+  background-color:#ffe6d5;
+  color:black;
+  text-align:center;
+  font-weight:bold;
+  font-size:1.2em;
+  transition-property:background-color color; /*add animation stuff*/
+  transition-duration:.7s;
+}  
+
+.block:hover {
+  background-color:#D9B8A3;
+  color:white;
+}
+
+.block_img { 
+  width:60%;
+  height:60%;
+  max-width:100%;
+  max-height:100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px #7D3400 solid;
+  transition-property:width height border-radius; /*add animation stuff*/
+  transition-duration:.7s;
+}
+
+.block_img:hover {
+  width:80%;
+  height:80%;
+  border-radius:2em;
+}
+
+#meals a {
+  text-decoration:none;
+  color:black;
+}
+
+#meals a:visited {
+  color:black;
+}
+
+
+
+/* Meal Ingredients Page */ 
+
+#mi_meal {
+  width: 80%;
+  margin:auto;
+  text-align:center;
+  border: 2px solid black;
+  border-radius:2em;
+  background-color:#ffe6d5;
+}
+
+.mi_img {
+  width:26%;
+  height:26%;
+  min-width:8em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:3%;
+  border: 2px #7D3400 solid;
+}
+
+#mi_meal p {
+  padding:2% 3%;
+}
+
+#mi_meal a {
+  text-decoration:none;
+  color:black;
+}
+
+#mi_meal a:visited {
+  color:black;
+}
+
+.mi_vegan, .mi_notvegan {
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:1.3%;
+  padding:1%;
+  border: 2px solid black;
+  border-radius:2em;
+  font-size:1.2em;
+}
+
+.mi_notvegan {
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:1.3%;
+  padding:1%;
+  border: 2px solid black;
+  border-radius:2em;
+  font-size:1em;
+}
+
+.mi_vegan {
+  background-color:#90FF4F;
+}
+
+.mi_notvegan {
+  background-color:#FF4F4F;
+  transition-property:background color padding font-weight font-size;
+  transition-duration:1s;
+}
+
+.mi_notvegan:hover {
+  background:#AD1717;
+  color:white;
+  padding:2% 0%;  
+  font-weight:bold;
+  font-size:1.3em;
+}
+
+
+
+
+/* Alternatives Page */ 
+
+#al_main {
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:90%;
+  
+}
+
+#al_section {
+  width: 80%;
+  margin:auto;
+}
+
+#al_section h2 {
+  background-color:#E8FFEE;
+  border-top: 2px solid #6A0091;
+  border-bottom: 2px solid #6A0091;
+  border-radius:25px;
+  padding:2%;
+  text-align:center;
+  font-size:2em;
+  margin-top:10%;
+}
+
+.al_grid { /* add grid class*/
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20% 2%;
+  width:80%;
+  margin:auto;
+}  
+
+.al_block {
+  width: 100%; 
+  height:auto;
+  padding: 2%;
+  border: 2px solid black;
+  border-radius:2em;
+  background-color:#ffe6d5;
+  color:black;
+  text-align:center;
+  font-weight:bold;
+  font-size:1.2em;
+  transition-property:background-color color; /*add animation stuff*/
+  transition-duration:.7s;
+}  
+
+.al_block:hover {
+  background-color:#D9B8A3;
+  color:white;
+}
+
+.al_block_img { 
+  width:60%;
+  height:60%;
+  max-width:100%;
+  max-height:100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px #7D3400 solid;
+}
+
+
+#al_main a {
+  text-decoration:none;
+  color:black;
+}
+
+#al_main a:visited {
+  color:black;
+}
+
+
+
+/* Account Page */
+
+.acc_pg {
+  width:50%;
+  margin:auto;
+  padding-bottom:6%;
+  border: 2px green solid;
+  border-radius:2em;
+  background: #d5ffe0;
+  text-align:center;
+}
+
+.acc_pg h2 {
+  font-size:2.8em;
+  text-align:center;
+}
+
+.acc_pg label {
+  font-weight:bold;
+  font-size:1.2em;
+}
+
+.acc_create {
+  background: #78AB8C;
+  color:white;
+}
+
+/* Navigation */
+
+nav {
+  bottom:0;
+  position:fixed;
+  width:100%;
+  background-color:#d5ffe0;
+  padding:3% 10%;
+  text-align:center;
+  border-top:2px solid black;
+  
+}
+
+.nav_btn {
+  background-color:#f5fff9;
+  border: 2px solid black;
+  border-radius:3em;
+  font-size:1.5em;
+  padding:1% 2%;  
+}
+
+.mid_btn {
+  margin-left:12%; 
+  margin-right:12%;
+}
+
+nav a {
+  text-decoration:none;
+  color:#15301B;
+}
+
+nav a:visited {
+  color:#15301B;
+}
+
+.ani_btn {
+  background: #f5fff9;
+  transition-property:background, color padding font-weight;
+  transition-duration:0.7s;
+}
+
+.ani_btn:hover {
+  background:#78AB8C;
+  color:white;
+  padding:2% 5%;  
+  font-weight:bold;
+}
+
+
+/* Responsive CSS */
+
+@media query
